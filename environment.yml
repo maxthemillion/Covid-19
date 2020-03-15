@@ -1,0 +1,11 @@
+name: covid19
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - altair
+  - pandas
+  - jupyterlab
+  - requests
+  - selenium
+
