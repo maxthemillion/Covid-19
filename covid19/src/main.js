@@ -23,7 +23,6 @@ let opts = {
   ]
 }
 
-
 new Vue({
   render: h => h(app, {props:{ opts: opts}}),
 }).$mount('#app')
