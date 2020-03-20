@@ -8,7 +8,7 @@ Charts are generated using altair: https://altair-viz.github.io
 ## Case development
 In recent days, researchers and (partly) governments have pointed to the importance of action in the light of exponential growth. It is hard to compare exponential growth across countries on a linear scale. Therefore, I created a chart that plots case count against a log scale. Days with less than 100 reported cases in one country have been filtered out.
 
-![](./charts/covid_cases_per_day.svg)
+![](./charts/cases_per_day.svg)
 
 One can clearly see that countries are in different stages of the epidemic. Italy is far ahead of the pack in cases. 
 
