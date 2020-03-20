@@ -1,0 +1,148 @@
+date,country,value
+2020-02-15,France,1
+2020-02-16,France,1
+2020-02-17,France,1
+2020-02-18,France,1
+2020-02-19,France,1
+2020-02-20,France,1
+2020-02-21,France,1
+2020-02-22,France,1
+2020-02-23,France,1
+2020-02-24,France,1
+2020-02-25,France,1
+2020-02-26,France,2
+2020-02-27,France,2
+2020-02-28,France,2
+2020-02-29,France,2
+2020-03-01,France,2
+2020-03-02,France,3
+2020-03-03,France,4
+2020-03-04,France,4
+2020-03-05,France,6
+2020-03-06,France,9
+2020-03-07,France,11
+2020-03-08,France,19
+2020-03-09,France,19
+2020-03-10,France,33
+2020-03-11,France,48
+2020-03-12,France,48
+2020-03-13,France,79
+2020-03-14,France,91
+2020-03-15,France,91
+2020-03-16,France,148
+2020-03-17,France,148
+2020-03-18,France,148
+2020-03-09,Germany,2
+2020-03-10,Germany,2
+2020-03-11,Germany,3
+2020-03-12,Germany,3
+2020-03-13,Germany,7
+2020-03-14,Germany,9
+2020-03-15,Germany,11
+2020-03-16,Germany,17
+2020-03-17,Germany,24
+2020-03-18,Germany,28
+2020-02-21,Italy,1
+2020-02-22,Italy,2
+2020-02-23,Italy,3
+2020-02-24,Italy,7
+2020-02-25,Italy,10
+2020-02-26,Italy,12
+2020-02-27,Italy,17
+2020-02-28,Italy,21
+2020-02-29,Italy,29
+2020-03-01,Italy,34
+2020-03-02,Italy,52
+2020-03-03,Italy,79
+2020-03-04,Italy,107
+2020-03-05,Italy,148
+2020-03-06,Italy,197
+2020-03-07,Italy,233
+2020-03-08,Italy,366
+2020-03-09,Italy,463
+2020-03-10,Italy,631
+2020-03-11,Italy,827
+2020-03-12,Italy,827
+2020-03-13,Italy,1266
+2020-03-14,Italy,1441
+2020-03-15,Italy,1809
+2020-03-16,Italy,2158
+2020-03-17,Italy,2503
+2020-03-18,Italy,2978
+2020-02-20,"Korea, South",1
+2020-02-21,"Korea, South",2
+2020-02-22,"Korea, South",2
+2020-02-23,"Korea, South",6
+2020-02-24,"Korea, South",8
+2020-02-25,"Korea, South",10
+2020-02-26,"Korea, South",12
+2020-02-27,"Korea, South",13
+2020-02-28,"Korea, South",13
+2020-02-29,"Korea, South",16
+2020-03-01,"Korea, South",17
+2020-03-02,"Korea, South",28
+2020-03-03,"Korea, South",28
+2020-03-04,"Korea, South",35
+2020-03-05,"Korea, South",35
+2020-03-06,"Korea, South",42
+2020-03-07,"Korea, South",44
+2020-03-08,"Korea, South",50
+2020-03-09,"Korea, South",53
+2020-03-10,"Korea, South",54
+2020-03-11,"Korea, South",60
+2020-03-12,"Korea, South",66
+2020-03-13,"Korea, South",66
+2020-03-14,"Korea, South",72
+2020-03-15,"Korea, South",75
+2020-03-16,"Korea, South",75
+2020-03-17,"Korea, South",81
+2020-03-18,"Korea, South",84
+2020-03-03,Spain,1
+2020-03-04,Spain,2
+2020-03-05,Spain,3
+2020-03-06,Spain,5
+2020-03-07,Spain,10
+2020-03-08,Spain,17
+2020-03-09,Spain,28
+2020-03-10,Spain,35
+2020-03-11,Spain,54
+2020-03-12,Spain,55
+2020-03-13,Spain,133
+2020-03-14,Spain,195
+2020-03-15,Spain,289
+2020-03-16,Spain,342
+2020-03-17,Spain,533
+2020-03-18,Spain,623
+2020-02-29,US,1
+2020-03-01,US,1
+2020-03-02,US,6
+2020-03-03,US,7
+2020-03-04,US,11
+2020-03-05,US,12
+2020-03-06,US,14
+2020-03-07,US,17
+2020-03-08,US,21
+2020-03-09,US,22
+2020-03-10,US,28
+2020-03-11,US,36
+2020-03-12,US,40
+2020-03-13,US,47
+2020-03-14,US,54
+2020-03-15,US,63
+2020-03-16,US,85
+2020-03-17,US,108
+2020-03-18,US,118
+2020-03-05,United Kingdom,1
+2020-03-06,United Kingdom,2
+2020-03-07,United Kingdom,2
+2020-03-08,United Kingdom,3
+2020-03-09,United Kingdom,4
+2020-03-10,United Kingdom,6
+2020-03-11,United Kingdom,8
+2020-03-12,United Kingdom,8
+2020-03-13,United Kingdom,8
+2020-03-14,United Kingdom,21
+2020-03-15,United Kingdom,21
+2020-03-16,United Kingdom,56
+2020-03-17,United Kingdom,56
+2020-03-18,United Kingdom,72
