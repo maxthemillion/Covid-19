@@ -32,6 +32,7 @@ date,country,value
 2020-03-16,France,148
 2020-03-17,France,148
 2020-03-18,France,148
+2020-03-19,France,243
 2020-03-09,Germany,2
 2020-03-10,Germany,2
 2020-03-11,Germany,3
@@ -42,6 +43,7 @@ date,country,value
 2020-03-16,Germany,17
 2020-03-17,Germany,24
 2020-03-18,Germany,28
+2020-03-19,Germany,44
 2020-02-21,Italy,1
 2020-02-22,Italy,2
 2020-02-23,Italy,3
@@ -69,6 +71,7 @@ date,country,value
 2020-03-16,Italy,2158
 2020-03-17,Italy,2503
 2020-03-18,Italy,2978
+2020-03-19,Italy,3405
 2020-02-20,"Korea, South",1
 2020-02-21,"Korea, South",2
 2020-02-22,"Korea, South",2
@@ -97,6 +100,7 @@ date,country,value
 2020-03-16,"Korea, South",75
 2020-03-17,"Korea, South",81
 2020-03-18,"Korea, South",84
+2020-03-19,"Korea, South",91
 2020-03-03,Spain,1
 2020-03-04,Spain,2
 2020-03-05,Spain,3
@@ -113,6 +117,7 @@ date,country,value
 2020-03-16,Spain,342
 2020-03-17,Spain,533
 2020-03-18,Spain,623
+2020-03-19,Spain,830
 2020-02-29,US,1
 2020-03-01,US,1
 2020-03-02,US,6
@@ -132,6 +137,7 @@ date,country,value
 2020-03-16,US,85
 2020-03-17,US,108
 2020-03-18,US,118
+2020-03-19,US,200
 2020-03-05,United Kingdom,1
 2020-03-06,United Kingdom,2
 2020-03-07,United Kingdom,2
@@ -146,3 +152,4 @@ date,country,value
 2020-03-16,United Kingdom,56
 2020-03-17,United Kingdom,56
 2020-03-18,United Kingdom,72
+2020-03-19,United Kingdom,138
