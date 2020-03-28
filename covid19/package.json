@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@bit/maxthemillion.d3charts.linechart": "file:./components/linechart",
+    "@bit/maxthemillion.d3charts.utils": "file:./components/utils",
     "@maxthemillion/vued3-linechart": "^0.1.6",
     "core-js": "^3.6.4",
     "vue": "^2.6.11"
