@@ -1,17 +1,18 @@
 <template>
   <div id="wrap">
-    <selector @userSelect="setSelect" v-bind:selectVals="this.selectVals"/> 
-    <linechart v-bind:opts="opts_casesVS100"/>
-    <linechart v-bind:opts="opts_mortalityVS100" />
+    <selector @userSelect="setSelect" v-bind:selectVals="this.selectVals" />
+    <div v-if="loaded">
+      <linechart v-bind="opts_casesVS100" />
+      <linechart v-bind="opts_mortalityVS100" />
+    </div>
   </div>
 </template>
 
 <script>
-import linechart from '@bit/maxthemillion.d3charts.linechart'
-//import linechart from '@maxthemillion/vued3-linechart'
-import selector from './components/Select.vue'
-import * as d3 from "d3"
-
+import linechart from "@bit/maxthemillion.d3charts.linechart";
+import selector from "./components/Select.vue";
+import { loadData } from "@bit/maxthemillion.d3charts.utils";
+import * as d3 from "d3";
 
 export default {
   name: "App",
@@ -21,8 +22,9 @@ export default {
   },
   data() {
     return {
-      selectVals:['Italy', 'Germany', 'France'],
-      opts_mortalityVStime : {
+      loaded: false,
+      selectVals: ["Italy", "Germany", "France"],
+      opts_mortalityVStime: {
         dataURL: "./data/all_sel.csv",
         chartTitle: "Are countries undertesting?",
         chartSubTitle: "Share of deaths in confirmed COVID-19 cases",
@@ -55,7 +57,7 @@ export default {
         colorHighlight: ["Germany", "Italy"],
         annotations: []
       },
-      opts_mortalityVS100 : {
+      opts_mortalityVS100: {
         dataURL: "./data/all_sel.csv",
         chartTitle: "Is mortality really different across countries?",
         chartSubTitle: "Share of deaths in confirmed COVID-19 cases",
@@ -79,13 +81,13 @@ export default {
         colorHighlight: ["Germany", "Italy"],
         annotations: []
       },
-      opts_casesVS100:{
+      opts_casesVS100: {
         dataURL: "./data/all_sel.csv",
         chartTitle: "What are the latest figures?",
-        chartSubTitle: "Confirmed COVID-19 cases since the 100th case in each country",
+        chartSubTitle:
+          "Confirmed COVID-19 cases since the 100th case in each country",
         commentTitle: "Exponential growht",
-        comment:
-          "",
+        comment: "",
         binding: {
           x: "days_since100",
           xType: "Q",
@@ -103,14 +105,34 @@ export default {
         colorHighlight: ["Germany", "Italy"],
         annotations: []
       }
+    };
+  },
+  methods: {
+    setSelect: function(selection) {
+      this.opts_casesVS100.colorHighlight = [selection];
+      this.opts_mortalityVS100.colorHighlight = [selection];
     }
   },
-  methods:{
-    setSelect: function(selection){
-      this.opts_casesVS100.colorHighlight = [selection]
-      this.opts_mortalityVS100.colorHighlight = [selection]
-    }
+  beforeMount: function() {
+    const _this = this;
+    let a = [
+      this.opts_casesVS100,
+      this.opts_mortalityVS100,
+      this.opts_casesVS100
+    ];
+    let l = [];
+    a.map(function(o) {
+      const _o = o;
+      l.push(
+        loadData(o).then(function(data) {
+          _o.vizData = data;
+        })
+      );
+    });
+
+    Promise.all(l).then(function() {
+      _this.loaded = true;
+    });
   }
 };
 </script>
-
