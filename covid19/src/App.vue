@@ -1,22 +1,27 @@
 <template>
   <div id="wrap">
+    <selector @userSelect="setSelect" v-bind:selectVals="this.selectVals"/> 
     <linechart v-bind:opts="opts_casesVS100"/>
     <linechart v-bind:opts="opts_mortalityVS100" />
   </div>
 </template>
 
 <script>
-import linechart from '@maxthemillion/vued3-linechart'
+import linechart from '@bit/maxthemillion.d3charts.linechart'
+//import linechart from '@maxthemillion/vued3-linechart'
+import selector from './components/Select.vue'
 import * as d3 from "d3"
 
 
 export default {
   name: "App",
   components: {
-    linechart
+    linechart,
+    selector
   },
   data() {
     return {
+      selectVals:['Italy', 'Germany', 'France'],
       opts_mortalityVStime : {
         dataURL: "./data/all_sel.csv",
         chartTitle: "Are countries undertesting?",
@@ -98,6 +103,12 @@ export default {
         colorHighlight: ["Germany", "Italy"],
         annotations: []
       }
+    }
+  },
+  methods:{
+    setSelect: function(selection){
+      this.opts_casesVS100.colorHighlight = [selection]
+      this.opts_mortalityVS100.colorHighlight = [selection]
     }
   }
 };
