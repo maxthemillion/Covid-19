@@ -3,6 +3,7 @@
     <selector @userSelect="setSelect" v-bind:selectVals="this.selectVals" />
     <div v-if="loaded">
       <linechart v-bind="opts_casesVS100" />
+      <linechart v-bind="opts_deathsVS100" />
       <linechart v-bind="opts_mortalityVS100" />
     </div>
   </div>
@@ -24,32 +25,26 @@ export default {
     return {
       loaded: false,
       selectVals: ["Italy", "Germany", "France"],
-      opts_mortalityVStime: {
+      opts_deathsVS100: {
         dataURL: "./data/all_sel.csv",
-        chartTitle: "Are countries undertesting?",
-        chartSubTitle: "Share of deaths in confirmed COVID-19 cases",
-        commentTitle: "Vast differences in testing procedures",
-        comment:
-          "While Germany and South Korea have very low numbers of deaths in confirmed cases, Italy and originally also the US did not. Assuming (almost) equal standards in health treatment across these industrialized countries, the figures may be an indicator on whether countries are undertesting.",
+        chartTitle: "How do deaths develop?",
+        chartSubTitle: "Confirmed COVID19 deaths",
+        commentTitle: "Exponential growth with a lag",
         binding: {
-          x: "date",
-          xType: "T",
-          y: "death_rate",
-          yType: "P",
+          x: "days_since100",
+          xType: "Q",
+          y: "deaths",
+          yType: "Q",
           color: "country",
           colorType: "N"
         },
-        format: {
-          y: d3.format(".1%"),
-          x: d3.timeFormat("%d %B")
-        },
-        tick: {
-          frequency: d3.timeWeek.every(1)
-        },
         scale: {
-          x: d3.scaleTime(),
+          x: d3.scaleLinear(),
           y: d3.scaleLinear(),
           color: d3.scaleOrdinal()
+        },
+        format: {
+          y: d3.format("d")
         },
         xAxisTitle: "Days since 100th case",
         yAxisTitle: null,
@@ -99,6 +94,11 @@ export default {
         format: {
           y: d3.format("d")
         },
+        scale: {
+          x: d3.scaleLinear(),
+          y: d3.scaleLinear(),
+          color: d3.scaleOrdinal()
+        },
         xAxisTitle: "Days since 100th case",
         yAxisTitle: null,
         colorScheme: ["steelblue"],
@@ -111,6 +111,7 @@ export default {
     setSelect: function(selection) {
       this.opts_casesVS100.colorHighlight = [selection];
       this.opts_mortalityVS100.colorHighlight = [selection];
+      this.opts_deathsVS100.colorHighlight = [selection];
     }
   },
   beforeMount: function() {
@@ -118,7 +119,7 @@ export default {
     let a = [
       this.opts_casesVS100,
       this.opts_mortalityVS100,
-      this.opts_casesVS100
+      this.opts_deathsVS100
     ];
     let l = [];
     a.map(function(o) {
