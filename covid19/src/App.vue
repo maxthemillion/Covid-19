@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import linechart from "@bit/maxthemillion.d3charts.linechart";
+import linechart from "@bit/maxthemillion.d3charts.c-line";
 import selector from "./components/Select.vue";
 import { loadData } from "@bit/maxthemillion.d3charts.utils";
 import * as d3 from "d3";
