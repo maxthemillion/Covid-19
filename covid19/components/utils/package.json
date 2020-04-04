@@ -1,6 +1,6 @@
 {
   "name": "@bit/maxthemillion.d3charts.utils",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "homepage": "https://bit.dev/maxthemillion/d3charts/utils",
   "main": "dist/dataLoad.js",
   "dependencies": {
@@ -13,7 +13,7 @@
   "bit": {
     "env": {
       "compiler": {
-        "bit.envs/compilers/typescript@3.1.40": {
+        "bit.envs/compilers/typescript@3.1.45": {
           "rawConfig": {
             "compilerPath": "typescript/bin/tsc",
             "compilerArguments": [

@@ -10,7 +10,6 @@
   "dependencies": {
     "@bit/maxthemillion.d3charts.c-line": "file:./components/c-line",
     "@bit/maxthemillion.d3charts.utils": "file:./components/utils",
-    "@maxthemillion/vued3-linechart": "^0.1.6",
     "core-js": "^3.6.4",
     "vue": "^2.6.11",
     "@bit/maxthemillion.d3charts.c-wrapper": "file:./components/c-wrapper"
@@ -46,7 +45,9 @@
     "last 2 versions"
   ],
   "bit": {
-    "env": {},
+    "env": {
+      "compiler": "bit.envs/bundlers/vue@2.6.21"
+    },
     "componentsDefaultDirectory": "components/{name}",
     "packageManager": "npm"
   }
