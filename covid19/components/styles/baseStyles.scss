@@ -8,6 +8,8 @@ $h5size : 2rem;
 $h6size : 1.8rem;
 $psize : 1.6rem;
 
+$highlightColor: #0e84ff;
+
 html{
     font-family: 'Raleway';
     -webkit-font-smoothing: antialiased;
@@ -45,5 +47,11 @@ p{
     text-align: justify;
     line-break: auto;
     line-height: 2.5rem;
+}
+
+a,
+a:visited {
+  color: $highlightColor;
+  text-decoration: none;
 }
 
