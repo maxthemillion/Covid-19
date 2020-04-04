@@ -223,17 +223,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#page-wrapper {
-  font-family: "Raleway";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+@import '~@bit/maxthemillion.d3charts.styles';
 
+#page-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  line-height: 1.6em;
 }
 
 #content-wrapper {
