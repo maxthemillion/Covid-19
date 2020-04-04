@@ -90,6 +90,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width:100%;
 }
 
 #contentWrapper {
@@ -98,7 +99,7 @@ export default {
   align-items: center;
   justify-content: start;
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
 }
 
 #chartWrapper {
