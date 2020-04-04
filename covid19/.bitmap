@@ -32,6 +32,19 @@
         "origin": "IMPORTED",
         "originallySharedDir": "src/components/Chart/Wrapper"
     },
+    "maxthemillion.d3charts/styles@0.0.4": {
+        "files": [
+            {
+                "name": "baseStyles.scss",
+                "relativePath": "baseStyles.scss",
+                "test": false
+            }
+        ],
+        "mainFile": "baseStyles.scss",
+        "rootDir": "components/styles",
+        "origin": "IMPORTED",
+        "originallySharedDir": "src/styles"
+    },
     "maxthemillion.d3charts/utils@0.0.4": {
         "files": [
             {

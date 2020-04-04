@@ -1,11 +1,9 @@
 {
-  "name": "@bit/maxthemillion.d3charts.c-wrapper",
-  "version": "0.1.3",
-  "homepage": "https://bit.dev/maxthemillion/d3charts/c-wrapper",
-  "main": "dist/ChartWrapper.vue",
-  "dependencies": {
-    "@bit/maxthemillion.d3charts.styles": "file:../styles"
-  },
+  "name": "@bit/maxthemillion.d3charts.styles",
+  "version": "0.0.4",
+  "homepage": "https://bit.dev/maxthemillion/d3charts/styles",
+  "main": "dist/baseStyles.scss",
+  "dependencies": {},
   "devDependencies": {},
   "peerDependencies": {},
   "license": "SEE LICENSE IN LICENSE",

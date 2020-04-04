@@ -1,8 +1,8 @@
 <template>
   <div id="page-wrapper">
     <div id="content-wrapper">
-      <div class="app-title">Exploring COVID-19 case counts</div>
-      <div class="intro">
+      <div><h1>Exploring COVID-19 case counts</h1></div>
+      <div class="intro text-block">
         <p>
           In the recent weeks, figures on COVID-19 cases around the world have really gone mad. Being confronted with those figures every day
           really made me go mad as well as I only saw case counts surging and death rates increasing. I didn't understand what was going on. Frankly, I was
@@ -15,8 +15,10 @@
           collection of my personal observations and a summary of my own learning process that I went through when dealing with the COVID-19 data.
         </p>
 
+      
       </div>
-      <div>
+      
+      <div class="text-block">
         <p>
           Data source for all charts is data collected and provided by
           <a href="https://github.com/CSSEGISandData/COVID-19">Johns Hopkins University</a>. COVID-19 Visualizations
@@ -35,11 +37,13 @@
           <a href="http://github.com/maxthemillion/covid-19">GitHub</a>.
           I plan to update this as things go on. So it may be worthwile to come back here in a few days
         </p>
+      
+      
       </div>
-      <div v-if="loaded">
-        <linechart v-bind="opts_casesVS100" />
-      </div>
-      <div>
+      
+      <linechart v-if="loaded" v-bind="opts_casesVS100" />
+
+      <div class="text-block">
         <p>
           This chart plots case counts with a twist: I normed all curves to the day where each country had their confirmed 100th case. It is 
           clear that many countries were not particularly successful in discovering cases early on. However, it makes the nations' paths 
@@ -72,11 +76,10 @@
 
       </div>
 
-      <div v-if="loaded">
-        <linechart v-bind="opts_deathsVS100" />
-      </div>
+      
+      <linechart v-if="loaded" v-bind="opts_deathsVS100" />
 
-      <div>
+      <div class="text-block">
         <p>
           For non-medical naives such as me, the chance for deaths from COVID-19 to go undetected seems to be much lower than missing out on infections.
           Therefore I expect that deaths mirror the severity of the outbreak across countries much more accurate than the potentially highly biased 
@@ -87,9 +90,8 @@
 
       </div>
 
-      <div v-if="loaded">
-        <linechart v-bind="opts_mortalityVS100" />
-      </div>
+      <linechart v-if="loaded" v-bind="opts_mortalityVS100" />
+
     </div>
   </div>
 </template>
@@ -233,15 +235,17 @@ export default {
 
 #content-wrapper {
   max-width: 800px;
-}
-
-.app-title {
-  line-height: 3em;
-  font-size: 2.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .intro {
   font-weight: bold;
+}
+
+.text-block {
+  max-width: 50rem;
 }
 
 a,

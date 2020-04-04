@@ -12,7 +12,8 @@
     "@bit/maxthemillion.d3charts.utils": "file:./components/utils",
     "core-js": "^3.6.4",
     "vue": "^2.6.11",
-    "@bit/maxthemillion.d3charts.c-wrapper": "file:./components/c-wrapper"
+    "@bit/maxthemillion.d3charts.c-wrapper": "file:./components/c-wrapper",
+    "@bit/maxthemillion.d3charts.styles": "file:./components/styles"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.2.0",
