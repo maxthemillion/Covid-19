@@ -1,9 +1,9 @@
 # Covid-19 Visualization
-This repository visualizes development of Covid-19 cases. 
+This repository visualizes development of Covid-19 cases. I started the project to explore the data in the early days of the pandemic when news coverage lacked good charts. Recently, a series of well designed charts emerged and so the original focus of this project shifted. I now use the data to explore two main visualization libraries:
+1. Altair https://altair-viz.github.io/ (see results below)
+2. D3.js https://d3js.org/ (see results at 
 
 Data comes from John Hopkins University: https://github.com/CSSEGISandData/COVID-19
-
-Charts are generated using altair: https://altair-viz.github.io
 
 ## Case development
 In recent days, researchers and (partly) governments have pointed to the importance of action in the light of exponential growth. It is hard to compare exponential growth across countries on a linear scale. Therefore, I created a chart that plots case count against a log scale. Days with less than 100 reported cases in one country have been filtered out.
