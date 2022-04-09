@@ -5,7 +5,7 @@
   "main": "dist/dataLoad.js",
   "dependencies": {
     "d3": "^5.15.0",
-    "moment": "^2.24.0"
+    "moment": "^2.29.2"
   },
   "devDependencies": {},
   "peerDependencies": {},
